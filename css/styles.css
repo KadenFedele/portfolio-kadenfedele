@@ -25,6 +25,7 @@ img {
     --color-surface: #ffffff;
     --color-text: #1f2937;
     --color-accent: #0369a1;
+    --color-muted: #6b7280;
 
     /* Spacing — a modular scale */
     --space-sm: 0.5rem;
@@ -134,7 +135,7 @@ nav a:hover { color: var(--color-accent); }
     text-decoration: none;
 }
 
-section { margin-bottom: var(--space-xl); }
+section, aside { margin-bottom: var(--space-xl); }
 
 .skills-grid {
     list-style: none;
