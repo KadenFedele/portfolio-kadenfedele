@@ -11,9 +11,13 @@
 <body>
 
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a>
+    <nav class="nav-container">
+        <a href="index.html" class="logo">Kaden Fedele</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
     </nav>
     <header>
         <div class="header-text">
@@ -37,7 +41,7 @@
         </li>
         <li class="skill-card">
             <h3>CSS</h3>
-            <p>Still learning.</p>
+            <p>Flexbox layouts and custom properties, still growing.</p>
         </li>
     </ul>
 <section id="projects">
@@ -46,35 +50,42 @@
         <li class="project-card">
             <h3>Personal Portfolio</h3>
             <p><time datetime="2026-08">August 2026</time></p>
-            <p>The site you are reading. Built from scratch in HTML and CSS.</p>
+            <p>Built entirely with flexbox — no frameworks, no media queries. Every layout on this site reflows on its own.</p>
         </li>
     </ul>
 </section>
     </section>
         <section>
             <h2>Highlights</h2>
-            <p>I enjoy sports and learning new technology. I am in this class to further my knowledge about coding and website development.</p>
+            <p>I rebuilt this site's layout entirely in flexbox this term — cards, columns, and navigation that reflow without a single media query.</p>
+            <p><a href="#about">More on my background and goals</a></p>
         </section>
 
-        <section>
-            <h2>About Me</h2>
-            <p>I enjoy sports and learning new technology. I am in this class to further my knowledge about coding and website development.</p>
+        <section class="about">
+            <div class="about-image">
                 <figure>
                     <img src="images/workspace.jpg" alt="A desk with two monitors and a notebook">
                     <figcaption>My workspace — where most of this site got built.</figcaption>
                 </figure>
-            <img src="images/screensaver.png" alt="a picture that captures a moment in nature">
-            </section>
+            </div>
+            <div class="about-text">
+                <h2 id="about">About Me</h2>
+                <p>I'm a Business Information Systems major at TCU, building toward a career at the intersection of business and software. Basketball and code reward the same habit: repeat the fundamentals until they hold.</p>
+                <p>I'm available for internships starting January 2027.</p>
+            </div>
+        </section>
+        <!-- TODO: screensaver.png pulled out of About — decide where it belongs -->
+        <img src="images/screensaver.png" alt="a picture that captures a moment in nature">
 
         <section>
             <h2 id="work">My Work</h2>
-            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Detailed write-ups of individual projects go here as I build them out over the course.</p>
         </section>
 
         <aside id="resources">
             <h2>Resources</h2>
             <ul>
-                <li><a href="http://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a> - the refrence I use when I get stuck</li>
+                <li><a href="http://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a> - the reference I use when I get stuck</li>
                 <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a> - clear writeups of layout technique</li>
                 <li><a href="https://web.dev/" target="_blank" rel="noopener">web.dev</a> - Google's guides on building for the modern web</li>
             </ul>
@@ -83,7 +94,7 @@
     <h2>Contact</h2>
     <p>The best way to reach me is by email.</p>
     <ul>
-        <li><a href="kaden.fedele@tcu.edu">kaden.fedele@tcu.edu</a></li>
+        <li><a href="mailto:kaden.fedele@tcu.edu">kaden.fedele@tcu.edu</a></li>
         <li><a href="https://github.com/kadenfedele" target="_blank" rel="noopener">My GitHub</a></li>
     </ul>
 </section>
